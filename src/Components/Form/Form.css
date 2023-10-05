@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: transparent;
 }
 .contact-form-container h4 {
   font-size: 25px;
@@ -12,6 +13,14 @@
   max-width: 400px;
   width: 100%;
   border-radius: 5px;
+  /* background-color: #f07b3f; */
+}
+.input{
+  border: 0px;
+}
+.textarea{
+  height: 100px;
+  width: 100px;
 }
 input[type="text"]:focus-visible,
 input[type="email"]:focus-visible,
@@ -27,10 +36,10 @@ textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border-bottom: 2px solid black;
+  border-radius: 2px;
   font-size: 16px;
-  background: #ffffff;
+  background: transparent;
   color: #000;
 }
 

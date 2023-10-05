@@ -11,6 +11,16 @@ import SideBarComp from "./SideBarComp";
 import { useState } from "react";
 function NavbarComp() {
   const [isSideBar, setIsSideBar] = useState(false);
+  const navToggle = document.getElementById('navToggle');
+  const menuLinks = document.querySelectorAll('.menu-items a');
+
+// Add click event listeners to each link
+menuLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    // Toggle the checkbox state to close the navbar
+    navToggle.checked = false;
+  });
+});
   return (
     <>
       {/* {isSideBar && <SideBarComp setState={setIsSideBar} />}
@@ -50,14 +60,17 @@ function NavbarComp() {
       <nav className="sticky">
         <div className="navbar">
           <div className="container-fluid nav-container">
-            <input className="checkbox" type="checkbox" name="" id="" />
+            <input className="checkbox" type="checkbox" name="" id="navToggle" />
             <div className="hamburger-lines">
               <span className="line line1"></span>
               <span className="line line2"></span>
               <span className="line line3"></span>
             </div>
+           
             <div className="logo">
-              <img src={whiteLogo} height="60" width="60" />
+              
+              <img src={whiteLogo} height="60" width="60" href='#home'/>
+            
             </div>
             <div className="menu-items">
               <li setState={setIsSideBar}>
@@ -77,6 +90,15 @@ function NavbarComp() {
               </li>
               <li>
                 <a href="#contact">Contact Us</a>
+              </li>
+              <li>
+              <div  >
+      <label>Language</label>
+      <select className="select" placeholder="Eng">
+        <option>Eng</option>
+        <option>Ger</option>
+      </select>
+      </div>
               </li>
             </div>
           </div>
