@@ -66,7 +66,13 @@ const Form = () => {
       <div className="contact-form-container">
         <h4 className="heading-text">Leave a message</h4>
         <form className="contact-form" onSubmit={handleSubmit}>
+        {/* <div class="input-data">
+               <input type="text" required/>
+               <div class="underline"></div>
+               <label for="">First Name</label>
+            </div> */}
           <input
+          className="input"
             type="text"
             name="name"
             placeholder="Name"
@@ -75,6 +81,7 @@ const Form = () => {
           />
           {errors.name && <p className="error">{errors.name}</p>}
           <input
+          className="input"
             type="email"
             name="email"
             placeholder="Email"
@@ -83,6 +90,7 @@ const Form = () => {
           />
           {errors.email && <p className="error">{errors.email}</p>}
           <input
+          className="input"
             type="tel"
             name="telephone"
             placeholder="Telephone"
@@ -91,6 +99,7 @@ const Form = () => {
           />
           {errors.telephone && <p className="error">{errors.telephone}</p>}
           <textarea
+          className
             name="message"
             placeholder="Message"
             value={formData.message}
