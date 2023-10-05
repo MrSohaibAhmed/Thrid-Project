@@ -1,0 +1,53 @@
+.site_footer {
+  padding: 30px 0;
+  background: linear-gradient(
+    90deg,
+    rgba(63, 58, 66, 1) 0%,
+    rgba(121, 63, 63, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.social_media_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.site_footer .MuiSvgIcon-root {
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+}
+.copyright_sec .MuiSvgIcon-root {
+  position: relative;
+  top: -2px;
+  width: 20px;
+  height: 20px;
+}
+.copyright_sec .MuiSvgIcon-root:hover {
+  color: #ffffff;
+}
+.MuiSvgIcon-root:hover {
+  color: #1a1a1a;
+}
+.social_media_icons {
+  display: flex;
+  flex-direction: column;
+}
+.social_media_icons h1 {
+  font-size: 25px;
+  font-weight: 300;
+  margin: 0;
+}
+.copyright_sec a {
+  text-decoration: underline;
+  text-shadow: 0px 0px 10px #fff;
+}
+.copyright_sec a:hover {
+  text-shadow: 0px 0px 15px #fff;
+}
