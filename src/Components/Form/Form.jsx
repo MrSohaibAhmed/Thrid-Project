@@ -1,8 +1,10 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
+import React, { useState , useRef} from "react";
+import emailjs from '@emailjs/browser';
 import "./Form.css";
 
 const Form = () => {
+  const form = useRef();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -54,6 +56,13 @@ const Form = () => {
     } else {
       setErrors(newErrors);
     }
+    emailjs.sendForm('service_4sarjqs','template_nd6s5rr',form.current,'3kRGWmzr-2Dr3uqIy')
+    .then((result) => {
+      console.log(result.text);
+  }, (error) => {
+      console.log(error.text);
+  });
+  e.target.reset();
   };
 
   const isValidEmail = (email) => {
@@ -65,7 +74,7 @@ const Form = () => {
     <>
       <div className="contact-form-container">
         <h4 className="heading-text">Leave a message</h4>
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <form ref={form} className="contact-form" onSubmit={handleSubmit}>
         {/* <div class="input-data">
                <input type="text" required/>
                <div class="underline"></div>
