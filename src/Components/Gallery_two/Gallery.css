@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
 .gallery {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 7rem;
-    margin: 4rem 0;
-  }
-  .gallery h1 {
-    color: #1a1a1a;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 3rem 0;
+}
+.gallery h1 {
+  color: #1a1a1a;
+}
 :root {
   /* Colors */
   --brand-color: hsl(46, 100%, 50%);
@@ -62,11 +62,17 @@ p {
 }
 
 /* CARD COMPONENT */
-
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
 .card {
   display: grid;
   place-items: center;
-  width: 80vw;
+  /* width: 80vw; */
   max-width: 21.875rem;
   height: 28.125rem;
   overflow: hidden;
@@ -204,4 +210,3 @@ p {
     transition-delay: 500ms;
   }
 }
-
