@@ -171,6 +171,8 @@ body {
 #home {
   background-image: url("./assets/banner_image.jpg");
   background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
 }
 .home_sec {
   background-color: #ffffffad;
