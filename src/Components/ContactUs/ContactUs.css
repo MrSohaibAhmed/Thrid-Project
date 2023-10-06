@@ -3,9 +3,8 @@
   justify-content: space-evenly;
   background: linear-gradient(
     90deg,
-    rgba(63, 58, 66, 1) 0%,
-    rgba(121, 63, 63, 1) 50%,
-    rgba(252, 176, 69, 1) 100%
+    rgba(156, 30, 70, 1) 0%,
+    rgba(29, 38, 113, 1) 60%
   );
   padding: 50px;
   flex-wrap: wrap;
