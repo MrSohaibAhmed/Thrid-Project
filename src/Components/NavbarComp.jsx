@@ -75,7 +75,7 @@ function NavbarComp() {
             </div>
 
             <div className="logo">
-              <img src={whiteLogo} height="60" width="60" href="#home" />
+              <img src={whiteLogo} height="85" width="85" href="#home" />
             </div>
             <div className="menu-items">
               <li onClick={closeNavbar}>
