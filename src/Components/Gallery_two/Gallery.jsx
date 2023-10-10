@@ -1,8 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { images } from "../../assets/ImpoerImages";
-
-// css file
 import "./Gallery.css";
 const Gallary = () => {
   const galleryData = [

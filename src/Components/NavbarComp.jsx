@@ -17,12 +17,11 @@ function NavbarComp() {
     setIsSideBar(false);
   };
   // Add click event listeners to each link
-  menuLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      // Toggle the checkbox state to close the navbar
-      navToggle.checked = false;
-    });
-  });
+  // menuLinks.forEach((link) => {
+  //   link.addEventListener("click", () => {
+  //     navToggle.checked = false;
+  //   });
+  // });
   return (
     <>
       {/* {isSideBar && <SideBarComp setState={setIsSideBar} />}
