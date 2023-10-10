@@ -285,19 +285,21 @@ h1 {
   padding-bottom: 7px;
 }
 .service_cards{
-margin-top: 30px;
-position: relative;
-height: 400px;
-display: flex;
-justify-content: space-around;
-cursor: pointer;
+  margin-top: 30px;
+  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .services{
   height: 800px;
 }
 .service{
-  height: 475px;
-  width: 375px;
+  height: 450px;
+  width: 25%;
   background-color: #eee7e7;
   box-shadow: 1px 3px 13px rgba(0, 0, 0, 1);
   padding: 16px;
