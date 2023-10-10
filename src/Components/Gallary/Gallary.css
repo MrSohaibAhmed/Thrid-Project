@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 7rem;
-  margin: 4rem 0;
+  gap: 4rem;
+  margin: 3rem 0;
 }
 .gallery h1 {
   color: #1a1a1a;

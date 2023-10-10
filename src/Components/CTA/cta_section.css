@@ -26,7 +26,7 @@
 .cta_image:after {
   content: "";
   display: block;
-  background: linear-gradient( 
+ background: linear-gradient( 
     112deg,
     rgba(156, 30, 70, 1) 14%,
     rgba(29, 38, 113, 1) 60%
