@@ -30,7 +30,7 @@ function HomeComp() {
       className=" w-full flex justify-center items-center flex-col h-[80vh] "
       name="home"
       id="home"
-      style={{ position: "relative", width: "100vw", height: "100vh" }}
+      style={{ position: "relative", width: "100%", height: "100vh" }}
     >
       <div
         className="home_sec"

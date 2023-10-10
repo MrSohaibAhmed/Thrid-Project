@@ -26,7 +26,7 @@
 .cta_image:after {
   content: "";
   display: block;
- background: linear-gradient( 
+  background: linear-gradient(
     112deg,
     rgba(156, 30, 70, 1) 14%,
     rgba(29, 38, 113, 1) 60%
@@ -49,13 +49,13 @@
   font-size: 16px;
   font-weight: 400;
   font-family: inherit;
-  background: #4c3b41;
+  background-image: linear-gradient(to right bottom, #ffc93c, #f07b3f);
   color: #ffffff;
   cursor: pointer;
   transition: all 0.2s ease-in-out 0s;
 }
 .cta_content button:hover {
-  background: #4c3b41c4;
+  background-image: linear-gradient(to right bottom, #f07b3f, #ffc93c);
   border: none;
   border-color: none !important;
 }

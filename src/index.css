@@ -193,18 +193,6 @@ body {
 
 /* nav bar css */
 
-
-
-
-
-
-
-
-
-
-
-
-
 .about {
   position: relative;
   perspective: 40em;
@@ -227,7 +215,7 @@ body {
   font-size: 60px;
   font-weight: 900;
   backface-visibility: hidden;
-  box-shadow: 0 10px 30px -3px rgba(0,0,0,.1);
+  box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -248,7 +236,7 @@ h1 {
 .about:before {
   --bw: 9px;
   grid-area: 1 / 1;
-  content: '';
+  content: "";
   backface-visibility: hidden;
   height: 100%;
   width: 100%;
@@ -261,95 +249,93 @@ h1 {
   box-sizing: content-box;
 }
 
-
 .about:hover > div,
 .about:hover:before {
   transform: none;
 }
 
-
 .about > div,
 .about:before {
   will-change: transform;
-  transition: .3s transform cubic-bezier(.25,.46,.45,1);
+  transition: 0.3s transform cubic-bezier(0.25, 0.46, 0.45, 1);
 }
-
 
 /* .our_service{
   background-color: #e1e1e1;
   padding: 30px 0px;
 } */
-.our_service h1{
+.our_service h1 {
   color: #3a5d3a;
   border-bottom: 3px dashed #3a5d3a;
   padding-bottom: 7px;
 }
-.service_cards{
+.service_cards {
   margin-top: 30px;
   position: relative;
   height: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   cursor: pointer;
   flex-wrap: wrap;
   width: 100%;
 }
-.services{
+.services {
   height: 800px;
 }
-.service{
-  height: 450px;
-  width: 25%;
+.service p {
+  text-align: left;
+}
+.service {
+  height: 400px;
+  width: 21%;
   background-color: #eee7e7;
   box-shadow: 1px 3px 13px rgba(0, 0, 0, 1);
-  padding: 16px;
+  padding: 16px 14px;
   border-radius: 20px;
   text-align: center;
   transition: all 1s;
-
 }
-.service:hover{
+.service:hover {
   background-color: #cecbe0;
 }
-.service:hover h4{
+.service:hover h4 {
   color: #1b121d;
 }
 
-.service h4{
+.service h4 {
   font-size: 30px;
   /* margin-top: 10px; */
   margin: 20px 0px 8px 0px;
   color: #794444;
 }
-.service p{
+.service p {
   line-height: 21px;
 }
 
-.service-icon{
+.service-icon {
   color: #000;
 }
-.services_heading{
+.services_heading {
   font-size: calc(40px + 0.5vw);
   font-weight: 400;
   line-height: calc(36px + 0.4vw);
   font-family: "Raleway", Helvetica, Arial, Lucida, sans-serif;
   color: #101010;
-  
+
   margin: 1rem 0;
 }
-.services{
+.services {
   background: linear-gradient(
     90deg,
     rgba(156, 30, 70, 1) 0%,
     rgba(29, 38, 113, 1) 60%
   );
- 
 }
-.list{
-  list-style-type:'✓';
+.list {
+  list-style-type: "✓";
   display: flex;
   flex-direction: column;
-  align-items:start;
+  align-items: start;
   color: #101010;
   margin-top: 15px;
 }
