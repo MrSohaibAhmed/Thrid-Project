@@ -16,48 +16,10 @@ function NavbarComp() {
   const closeNavbar = () => {
     setIsSideBar(false);
   };
-  // Add click event listeners to each link
-  // menuLinks.forEach((link) => {
-  //   link.addEventListener("click", () => {
-  //     navToggle.checked = false;
-  //   });
-  // });
+  
   return (
     <>
-      {/* {isSideBar && <SideBarComp setState={setIsSideBar} />}
-      <Box sx={{ flexGrow: 1 }}>
-        <AppBar
-          style={{
-            backgroundColor: "#3f3a42",
-            top: "0%",
-            position: isSideBar ? "static" : "",
-          }}
-        >
-          <Toolbar>
-            <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              sx={{ mr: 2 }}
-            >
-              <div
-                onClick={() => {
-                  setIsSideBar(true);
-                }}
-              >
-                <MenuIcon />
-              </div>
-            </IconButton>
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{ flexGrow: 1 }}
-            ></Typography>
-            <img src={whiteLogo} className="w-[120px] p-2" alt="image" />
-          </Toolbar>
-        </AppBar>
-      </Box> */}
+   
       <nav className="sticky">
         <div className="navbar">
           <div className="container-fluid nav-container">
